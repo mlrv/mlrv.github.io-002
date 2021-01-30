@@ -167,6 +167,8 @@ Error message and password prompt
 
 <li>$:/config/Plugins/Disabled/$:/plugins/telmiger/PluginSize</li>
 
+<li>$:/config/RelinkOnRename</li>
+
 <li>$:/config/Tiddlers/TitleLinks</li>
 
 <li>$:/config/Toolbar/ButtonClass</li>
@@ -197,6 +199,10 @@ Error message and password prompt
 
 <li>$:/plugins/rmnvsl/krystal</li>
 
+<li>$:/plugins/rmnvsl/krystal/references.css</li>
+
+<li>$:/plugins/rmnvsl/krystal/referenceshere</li>
+
 <li>$:/plugins/snowgoon88/edit-comptext</li>
 
 <li>$:/plugins/tiddlywiki/highlight</li>
@@ -204,10 +210,6 @@ Error message and password prompt
 <li>$:/SiteSubtitle</li>
 
 <li>$:/SiteTitle</li>
-
-<li>$:/state/tab-1749438307</li>
-
-<li>$:/state/tab-2065006209</li>
 
 <li>$:/status/IsAnonymous</li>
 
@@ -227,6 +229,8 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
+<li>A somewhat longer title... really longer to be fair. What if it was even longer than that?</li>
+
 <li>Some Content</li>
 
 <li>Why</li>
@@ -245,7 +249,7 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20210123161859843" modified="20210123171031317" tags="" title="~" type="text/vnd.tiddlywiki" revision="1" bag="default">
+<div created="20210123161859843" modified="20210123171031341" tags="" title="~" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>[[Why]]</pre>
 </div>
 <div created="20210123165848756" modified="20210123165935999" title="$:/config/AutoSave" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -283,6 +287,9 @@ Error message and password prompt
 </div>
 <div created="20210110192858041" modified="20210110192859223" title="$:/config/Plugins/Disabled/$:/plugins/telmiger/PluginSize" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>no</pre>
+</div>
+<div created="20210130171053435" modified="20210130171053444" title="$:/config/RelinkOnRename" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>yes</pre>
 </div>
 <div created="20210123163052596" modified="20210123163055399" title="$:/config/Tiddlers/TitleLinks" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>no</pre>
@@ -10166,8 +10173,8 @@ Error message and password prompt
 <div created="20210109175928789" list="" modified="20210123162336628" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>~</pre>
 </div>
-<div created="20210123164216321" modified="20210123164218745" title="$:/GitHub/Filename" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>index.html</pre>
+<div created="20210123164216321" modified="20210123171602725" title="$:/GitHub/Filename" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>notes-repo/index.html</pre>
 </div>
 <div created="20210123164036668" modified="20210123170438272" title="$:/GitHub/Path" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>/</pre>
@@ -11169,6 +11176,72 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20210130165727023" modified="20210130171204782" tags="$:/tags/Stylesheet" title="$:/plugins/rmnvsl/krystal/references.css" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
+
+.krystal-references {
+  background: &lt;&lt;color page-background&gt;&gt;;
+  font-size: 0.75em;
+  padding: 0.5rem;
+  list-style: none;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.krystal-references__title {
+  font-size: 1.25em;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.krystal-references__reference {
+  width: 50%;
+}
+
+.krystal-references__reference &gt; a {
+  color: inherit;
+  background: inherit;
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.125s ease;
+}
+
+.krystal--static .krystal-references__reference &gt; a {
+  height: initial;
+  overflow: initial;
+}
+
+.krystal-references__reference &gt; a:hover {
+  color: &lt;&lt;color sidebar-tab-foreground&gt;&gt;;
+  background: &lt;&lt;color sidebar-tab-background&gt;&gt;;
+  text-decoration: none;
+}
+
+.krystal--static .krystal-references__content {
+  height: 130px;
+  overflow: hidden;
+}
+
+.krystal-references__content a {
+  color: inherit !important;
+  text-decoration: none !important;
+  pointer-events: none;
+}
+
+.krystal-references__content {
+  display: none;
+}</pre>
+</div>
+<div created="20210130165632312" modified="20210130165636287" title="$:/plugins/rmnvsl/krystal/referenceshere" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>Backlinks</pre>
+</div>
 <div author="AlainD" core-version="&gt;=5.1.13" created="20210109180154517" dependents="" description="Editor with some on-line completion capabilities" list="readme usage examples" modified="20210109180154517" plugin-type="plugin" source="https://github.com/snowgoon88/TW5-extendedit" title="$:/plugins/snowgoon88/edit-comptext" type="application/json" version="0.9.1" revision="0" bag="default">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -11310,12 +11383,6 @@ Error message and password prompt
 <div created="20210123162327791" modified="20210123162327809" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>~</pre>
 </div>
-<div created="20210123171042813" modified="20210123171042813" title="$:/state/tab-1749438307" revision="1" bag="default">
-<pre>$:/core/ui/ControlPanel/Saving</pre>
-</div>
-<div created="20210123171047226" modified="20210123171047226" title="$:/state/tab-2065006209" revision="1" bag="default">
-<pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
-</div>
 <div title="$:/status/IsAnonymous" revision="1" bag="default">
 <pre>yes</pre>
 </div>
@@ -11331,7 +11398,7 @@ Error message and password prompt
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre></pre>
 </div>
-<div list="~" title="$:/StoryList" revision="8" bag="default">
+<div list="~" title="$:/StoryList" revision="1" bag="default">
 <pre></pre>
 </div>
 <div created="20210123162142464" modified="20210123162144581" title="$:/theme" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -11446,15 +11513,20 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20210123162440860" modified="20210123162502027" tags="Something" title="Some Content" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Something</pre>
+<div created="20210130162008205" modified="20210130171131360" tags="Something" title="A somewhat longer title... really longer to be fair. What if it was even longer than that?" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>[[Why]]
+
+nice nice</pre>
 </div>
-<div created="20210123162009321" modified="20210123165453471" tags="" title="Why" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20210123162440860" modified="20210123171624449" tags="Something" title="Some Content" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>Something
+
+Else</pre>
+</div>
+<div created="20210123162009321" modified="20210123171415880" tags="" title="Why" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Why
 
-[[Some Content]]
-
-Not</pre>
+[[Some Content]]</pre>
 </div>
 
 
