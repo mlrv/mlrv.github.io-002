@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>~ — </title>
+<title>~/notes — </title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -140,8 +140,6 @@ Error message and password prompt
 
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
-
-<li>~</li>
 
 <li>$:/config/AutoSave</li>
 
@@ -237,11 +235,15 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
-<li>A somewhat longer title... really longer to be fair. What if it was even longer than that?</li>
+<li>$:/themes/tiddlywiki/vanilla/metrics/bodyfontsize</li>
 
-<li>Some Content</li>
+<li>$:/themes/tiddlywiki/vanilla/metrics/fontsize</li>
 
-<li>Why</li>
+<li>$:/themes/tiddlywiki/vanilla/settings/fontfamily</li>
+
+<li>About</li>
+
+<li>Style</li>
 
 </ul>
 </p>
@@ -257,9 +259,6 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20210123161859843" modified="20210123171031341" tags="" title="~" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>[[Why]]</pre>
-</div>
 <div created="20210123165848756" modified="20210123165935999" title="$:/config/AutoSave" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>yes</pre>
 </div>
@@ -272,8 +271,8 @@ Error message and password prompt
 <div created="20210110191526312" modified="20210110191532161" title="$:/config/EditorTypeMappings/text/vnd.tiddlywiki" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>comptext</pre>
 </div>
-<div created="20210123162756892" modified="20210123162756902" title="$:/config/Navigation/UpdateAddressBar" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>permalink</pre>
+<div created="20210123162756892" modified="20210130173712423" title="$:/config/Navigation/UpdateAddressBar" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>permaview</pre>
 </div>
 <div created="20210123162710593" modified="20210123162748598" title="$:/config/Navigation/UpdateHistory" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>yes</pre>
@@ -10184,8 +10183,8 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20210109175928789" list="" modified="20210123162336628" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>~</pre>
+<div created="20210109175928789" list="" modified="20210206155639830" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="5" bag="default">
+<pre>About</pre>
 </div>
 <div created="20210130172036291" modified="20210130172036301" title="$:/GitHub/Branch" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
@@ -10205,10 +10204,10 @@ Error message and password prompt
 <div created="20210123163645351" modified="20210130172032948" title="$:/GitHub/Username" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
-<div created="20210130171854059" modified="20210130171854059" status="complete" title="$:/Import" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20210206151720418" modified="20210206151720418" status="complete" title="$:/Import" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>The following tiddlers were imported:
 
-# [[$:/plugins/tg/sro]]</pre>
+# [[preview]]</pre>
 </div>
 <div title="$:/isEncrypted" revision="0" bag="default">
 <pre>no</pre>
@@ -11108,7 +11107,7 @@ Error message and password prompt
         },
         &quot;$:/plugins/rmnvsl/krystal/river.css&quot;: {
             &quot;title&quot;: &quot;$:/plugins/rmnvsl/krystal/river.css&quot;,
-            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html\n\n.tc-tiddler-frame {\n  border: none;\n  border-bottom: 1px solid &lt;&lt;color page-background&gt;&gt;;\n  border-radius: 0;\n  box-shadow: none;\n  margin: 0;\n  flex-shrink: 0;\n  overflow-y: auto;\n  display: flex;\n  flex-direction: column;\n  position: sticky;\n}\n\n.tc-alerts + p {\n  margin: 0;\n}\n\n@media (min-width: 960px) {\n  .tc-dropzone {\n    height: 100vh;\n    display: flex;\n    flex-direction: column;\n  }\n\n  .tc-story-river {\n    padding: 0;\n    display: flex;\n    overflow-y: hidden;\n    height: 100%;\n  }\n\n  .krystal--static .tc-story-river {\n    max-height: 100vh;\n  }\n\n  .tc-tiddler-frame {\n    border: none;\n    border-right: 1px solid &lt;&lt;color page-background&gt;&gt;;\n    padding: var(--tiddler-padding);\n    width: var(--tiddler-width);\n  }\n\n  .tc-tiddler-frame &gt; * {\n    transition: opacity 0.25s ease;\n  }\n\n  .krystal-link--active {\n    background: &lt;&lt;color message-background&gt;&gt;;\n  }\n\n  .krystal-tiddler__frame--hide &gt; *:not(.krystal-tiddler__title) {\n    opacity: 0;\n  }\n    \n  .krystal-tiddler__frame--overlay {\n    box-shadow: 0 0 1em rgba(0, 0, 0, 0.125);\n  }\n\n  .krystal-tiddler__frame--maximized {\n    left: 0 !important;\n    right: 0 !important;\n    bottom: 0;\n    width: 100%;\n    z-index: 100;\n  }\n  \n  .tc-tiddler-frame:nth-of-type(1) { left: calc(0 * var(--tiddler-padding)) }\n  .tc-tiddler-frame:nth-of-type(2) { left: calc(1 * var(--tiddler-padding)) }\n  .tc-tiddler-frame:nth-of-type(3) { left: calc(2 * var(--tiddler-padding)) }\n  .tc-tiddler-frame:nth-of-type(4) { left: calc(3 * var(--tiddler-padding)) }\n  .tc-tiddler-frame:nth-of-type(5) { left: calc(4 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(6) { left: calc(5 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(7) { left: calc(6 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(8) { left: calc(7 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(9) { left: calc(8 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(10) { left: calc(9 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(11) { left: calc(10 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(12) { left: calc(11 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(13) { left: calc(12 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(14) { left: calc(13 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(15) { left: calc(14 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(16) { left: calc(15 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(17) { left: calc(16 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(18) { left: calc(17 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(19) { left: calc(18 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(20) { left: calc(19 * var(--tiddler-padding)); }\n\n  .tc-tiddler-frame:nth-last-of-type(1) { right: calc(-1 * var(--tiddler-width) + 1 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(2) { right: calc(-1 * var(--tiddler-width) + 2 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(3) { right: calc(-1 * var(--tiddler-width) + 3 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(4) { right: calc(-1 * var(--tiddler-width) + 4 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(5) { right: calc(-1 * var(--tiddler-width) + 5 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(6) { right: calc(-1 * var(--tiddler-width) + 6 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(7) { right: calc(-1 * var(--tiddler-width) + 7 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(8) { right: calc(-1 * var(--tiddler-width) + 8 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(9) { right: calc(-1 * var(--tiddler-width) + 9 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(10) { right: calc(-1 * var(--tiddler-width) + 10 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(11) { right: calc(-1 * var(--tiddler-width) + 11 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(12) { right: calc(-1 * var(--tiddler-width) + 12 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(13) { right: calc(-1 * var(--tiddler-width) + 13 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(14) { right: calc(-1 * var(--tiddler-width) + 14 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(15) { right: calc(-1 * var(--tiddler-width) + 15 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(16) { right: calc(-1 * var(--tiddler-width) + 16 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(17) { right: calc(-1 * var(--tiddler-width) + 17 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(18) { right: calc(-1 * var(--tiddler-width) + 18 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(19) { right: calc(-1 * var(--tiddler-width) + 19 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(20) { right: calc(-1 * var(--tiddler-width) + 20 * var(--tiddler-padding)); }\n\n  .krystal--static .tc-tiddler-frame {\n    left: initial;\n    right: initial;\n  }\n}\n&quot;,
+            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html\n\n.tc-tiddler-frame {\n  border: none;\n  border-bottom: 1px solid &lt;&lt;color page-background&gt;&gt;;\n  border-radius: 0;\n  box-shadow: none;\n  margin: 0;\n  flex-shrink: 0;\n  overflow-y: auto;\n  display: flex;\n  flex-direction: column;\n  position: sticky;\n}\n\n.tc-alerts + p {\n  margin: 0;\n}\n\n@media (min-width: 960px) {\n  .tc-dropzone {\n    height: 100vh;\n    display: flex;\n    flex-direction: column;\n  }\n\n  .tc-story-river {\n    padding: 0;\n    display: flex;\n    overflow-y: hidden;\n    height: 100%;\n  }\n\n  .krystal--static .tc-story-river {\n    max-height: 100vh;\n  }\n\n  .tc-tiddler-frame {\n    border: none;\n    border-right: 1px solid &lt;&lt;color page-background&gt;&gt;;\n    padding: var(--tiddler-padding);\n    width: var(--tiddler-width);\n  }\n\n  .tc-tiddler-frame &gt; * {\n    transition: opacity 0.25s ease;\n  }\n\n  .krystal-link--active {}\n\n  .krystal-tiddler__frame--hide &gt; *:not(.krystal-tiddler__title) {\n    opacity: 0;\n  }\n    \n  .krystal-tiddler__frame--overlay {\n    box-shadow: 0 0 1em rgba(0, 0, 0, 0.125);\n  }\n\n  .krystal-tiddler__frame--maximized {\n    left: 0 !important;\n    right: 0 !important;\n    bottom: 0;\n    width: 100%;\n    z-index: 100;\n  }\n  \n  .tc-tiddler-frame:nth-of-type(1) { left: calc(0 * var(--tiddler-padding)) }\n  .tc-tiddler-frame:nth-of-type(2) { left: calc(1 * var(--tiddler-padding)) }\n  .tc-tiddler-frame:nth-of-type(3) { left: calc(2 * var(--tiddler-padding)) }\n  .tc-tiddler-frame:nth-of-type(4) { left: calc(3 * var(--tiddler-padding)) }\n  .tc-tiddler-frame:nth-of-type(5) { left: calc(4 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(6) { left: calc(5 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(7) { left: calc(6 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(8) { left: calc(7 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(9) { left: calc(8 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(10) { left: calc(9 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(11) { left: calc(10 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(12) { left: calc(11 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(13) { left: calc(12 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(14) { left: calc(13 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(15) { left: calc(14 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(16) { left: calc(15 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(17) { left: calc(16 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(18) { left: calc(17 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(19) { left: calc(18 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-of-type(20) { left: calc(19 * var(--tiddler-padding)); }\n\n  .tc-tiddler-frame:nth-last-of-type(1) { right: calc(-1 * var(--tiddler-width) + 1 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(2) { right: calc(-1 * var(--tiddler-width) + 2 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(3) { right: calc(-1 * var(--tiddler-width) + 3 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(4) { right: calc(-1 * var(--tiddler-width) + 4 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(5) { right: calc(-1 * var(--tiddler-width) + 5 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(6) { right: calc(-1 * var(--tiddler-width) + 6 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(7) { right: calc(-1 * var(--tiddler-width) + 7 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(8) { right: calc(-1 * var(--tiddler-width) + 8 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(9) { right: calc(-1 * var(--tiddler-width) + 9 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(10) { right: calc(-1 * var(--tiddler-width) + 10 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(11) { right: calc(-1 * var(--tiddler-width) + 11 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(12) { right: calc(-1 * var(--tiddler-width) + 12 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(13) { right: calc(-1 * var(--tiddler-width) + 13 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(14) { right: calc(-1 * var(--tiddler-width) + 14 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(15) { right: calc(-1 * var(--tiddler-width) + 15 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(16) { right: calc(-1 * var(--tiddler-width) + 16 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(17) { right: calc(-1 * var(--tiddler-width) + 17 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(18) { right: calc(-1 * var(--tiddler-width) + 18 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(19) { right: calc(-1 * var(--tiddler-width) + 19 * var(--tiddler-padding)); }\n  .tc-tiddler-frame:nth-last-of-type(20) { right: calc(-1 * var(--tiddler-width) + 20 * var(--tiddler-padding)); }\n\n  .krystal--static .tc-tiddler-frame {\n    left: initial;\n    right: initial;\n  }\n}\n&quot;,
             &quot;tags&quot;: &quot;$:/tags/Stylesheet&quot;
         },
         &quot;$:/plugins/rmnvsl/krystal/search&quot;: {
@@ -11196,7 +11195,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20210130165727023" modified="20210130171204782" tags="$:/tags/Stylesheet" title="$:/plugins/rmnvsl/krystal/references.css" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20210130165727023" modified="20210206153250885" tags="$:/tags/Stylesheet" title="$:/plugins/rmnvsl/krystal/references.css" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
 
 .krystal-references {
@@ -11227,7 +11226,7 @@ Error message and password prompt
   display: block;
   text-decoration: none;
   padding: 0.5rem;
-  height: 50px;
+  height: 100px;
   overflow: hidden;
   position: relative;
   transition: all 0.125s ease;
@@ -11397,11 +11396,11 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20210123162330028" modified="20210123162330039" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20210123162330028" modified="20210130173810706" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
-<div created="20210123162327791" modified="20210123162327809" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>~</pre>
+<div created="20210123162327791" modified="20210130173438042" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>~/notes</pre>
 </div>
 <div title="$:/status/IsAnonymous" revision="1" bag="default">
 <pre>yes</pre>
@@ -11418,10 +11417,10 @@ Error message and password prompt
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre></pre>
 </div>
-<div list="~" title="$:/StoryList" revision="1" bag="default">
+<div list="About" title="$:/StoryList" revision="44" bag="default">
 <pre></pre>
 </div>
-<div created="20210123162142464" modified="20210123162144581" title="$:/theme" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20210123162142464" modified="20210205092742250" title="$:/theme" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>$:/themes/tiddlywiki/vanilla</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23" revision="0" bag="default">
@@ -11533,20 +11532,52 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20210130162008205" modified="20210130171131360" tags="Something" title="A somewhat longer title... really longer to be fair. What if it was even longer than that?" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>[[Why]]
-
-nice nice</pre>
+<div created="20210206151625245" modified="20210206151630522" title="$:/themes/tiddlywiki/vanilla/metrics/bodyfontsize" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>18px</pre>
 </div>
-<div created="20210123162440860" modified="20210123171624449" tags="Something" title="Some Content" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Something
-
-Else</pre>
+<div created="20210206151620504" modified="20210206151621781" title="$:/themes/tiddlywiki/vanilla/metrics/fontsize" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>18px</pre>
 </div>
-<div created="20210123162009321" modified="20210123171415880" tags="" title="Why" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Why
+<div created="20210206152506161" modified="20210206152533941" title="$:/themes/tiddlywiki/vanilla/settings/fontfamily" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>Roboto, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;</pre>
+</div>
+<div created="20210123162009321" modified="20210206155632122" tags="" title="About" type="text/vnd.tiddlywiki" revision="3" bag="default">
+<pre>Hey, I'm Marco 👋
 
-[[Some Content]]</pre>
+You found my digital garden, feel free to have a look around and explore. The main purpose of this place is to create the right conditions for ideas to develop, grow, and form connections across disciplines.
+
+At the end of each note, you'll find a series of backlinks, pointing to all the notes connected to the one you are reading.
+
+The format of these notes is heavily inspired by [[Andy Matuschak|https://notes.andymatuschak.org/About_these_notes]] and made possible by the [[TW Kristal plugin|https://github.com/crazko/krystall]].
+
+</pre>
+</div>
+<div created="20210205092829736" modified="20210206153244306" tags="$:/tags/Stylesheet" title="Style" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>UNUSED.body {
+	font-size: 18px !important;
+}
+
+UNUSED.tc-tiddler-frame .tc-tiddler-body {
+  font-size: 18px;
+}
+
+UNUSED.tc-tiddlylink-missing {
+  display: none
+}
+
+UNUSED.a.tc-tiddlylink {
+  color: #333333 !important;
+  text-decoration: none !important;
+}
+
+UNUSED.a.tc-tiddlylink:after {
+  content: &quot;}&quot;
+}
+
+UNUSED.a.tc-tiddlylink:before {
+  content: &quot;{&quot;
+}
+</pre>
 </div>
 
 
