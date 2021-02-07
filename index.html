@@ -141,6 +141,12 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/.giffmex/.Stylesheet4popups</li>
+
+<li>$:/.giffmex/EditorToolbar/linkpopups</li>
+
+<li>$:/.giffmex/EditorToolbar/unlinkedpopups</li>
+
 <li>$:/config/AutoSave</li>
 
 <li>$:/config/DefaultMoreSidebarTab</li>
@@ -184,6 +190,8 @@ Error message and password prompt
 <li>$:/config/Toolbar/ButtonClass</li>
 
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/close</li>
+
+<li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/delete</li>
 
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit</li>
 
@@ -253,6 +261,8 @@ Error message and password prompt
 
 <li>$:/state/tab-1101911311</li>
 
+<li>$:/state/tabs/controlpanel/toolbars-1912712011</li>
+
 <li>$:/status/IsAnonymous</li>
 
 <li>$:/status/IsLoggedIn</li>
@@ -277,7 +287,17 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/settings/fontfamily</li>
 
+<li>$:/user/images/popup-link</li>
+
+<li>$:/user/images/popup-unlink</li>
+
+<li>$:/view</li>
+
 <li>About</li>
+
+<li>Foobar</li>
+
+<li>Something</li>
 
 <li>Style</li>
 
@@ -297,6 +317,57 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20200421214558221" modified="20210206164850479" tags="tb $:/tags/Stylesheet" title="$:/.giffmex/.Stylesheet4popups" type="text/css" revision="0" bag="default">
+<pre>.tooltip {
+  position: relative;
+  display: inline-block;
+  color:#56e;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 500px;
+height:300px;
+overflow: scroll;
+  background-color: white;
+  color: #000;
+  text-align: left;
+  border-radius: 6px;
+-moz-box-shadow: 10px 10px 5px #bbb;
+-webkit-box-shadow: 10px 10px 5px #bbb;
+box-shadow: 10px 10px 5px #bbb;
+  padding: 15px;
+display:block;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 80;
+  top: 20px;
+  left: 20px;
+}
+
+.tooltip:hover &gt; .tooltiptext {
+  visibility: visible;
+}
+
+</pre>
+</div>
+<div caption="link popups" condition="[&lt;targetTiddler&gt;!has[type]] [&lt;targetTiddler&gt;type[text/vnd.tiddlywiki]]" created="20200128024856933" description="link popups" icon="$:/user/images/popup-link" modified="20210206164854623" shortcuts="" tags="$:/tags/EditorToolbar" title="$:/.giffmex/EditorToolbar/linkpopups" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;$action-sendmessage
+    $message=&quot;tm-edit-text-operation&quot;
+    $param=&quot;wrap-selection&quot;
+    prefix=&quot;&quot;&quot;&lt;div class=&quot;tooltip&quot;&gt;&lt;a href=&quot;XXX&quot;&gt;YYY&lt;/a&gt;&lt;div class=&quot;tooltiptext&quot;&gt;&lt;$transclude tiddler=&quot;ZZZ&quot; mode=&quot;block&quot;/&gt;&lt;/div&gt;&lt;/div&gt;&quot;&quot;&quot;
+    suffix=&quot;&quot;&quot;&quot;&quot;&quot;
+/&gt;</pre>
+</div>
+<div caption="unlinked popups" condition="[&lt;targetTiddler&gt;!has[type]] [&lt;targetTiddler&gt;type[text/vnd.tiddlywiki]]" created="20200422155249074" description="unlinked popups" icon="$:/user/images/popup-unlink" modified="20210206165312683" shortcuts="" tags="$:/tags/EditorToolbar" title="$:/.giffmex/EditorToolbar/unlinkedpopups" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;$action-sendmessage
+    $message=&quot;tm-edit-text-operation&quot;
+    $param=&quot;wrap-selection&quot;
+    prefix=&quot;&quot;&quot;&lt;div class=&quot;tooltip&quot;&gt;YYY&lt;div class=&quot;tooltiptext&quot;&gt;&lt;$transclude tiddler=&quot;ZZZ&quot; mode=&quot;block&quot;/&gt;&lt;/div&gt;&lt;/div&gt;&quot;&quot;&quot;
+    suffix=&quot;&quot;&quot;&quot;&quot;&quot;
+/&gt;</pre>
+</div>
 <div created="20210123165848756" modified="20210123165935999" title="$:/config/AutoSave" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>yes</pre>
 </div>
@@ -306,7 +377,7 @@ Error message and password prompt
 <div created="20210123165430334" modified="20210123165522400" title="$:/config/DownloadSaver/AutoSave" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>no</pre>
 </div>
-<div created="20210206160819912" modified="20210206162128102" title="$:/config/DragAndDrop/Enable" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20210206160819912" modified="20210206163145815" title="$:/config/DragAndDrop/Enable" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>yes</pre>
 </div>
 <div created="20210110191526312" modified="20210110191532161" title="$:/config/EditorTypeMappings/text/vnd.tiddlywiki" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -318,16 +389,16 @@ Error message and password prompt
 <div created="20210123162710593" modified="20210123162748598" title="$:/config/Navigation/UpdateHistory" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>yes</pre>
 </div>
-<div created="20210206162241803" modified="20210206162241813" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20210206162241803" modified="20210207113309440" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre>hide</pre>
 </div>
 <div created="20200513172113768" modified="20210206161607817" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>show</pre>
 </div>
-<div created="20200513172048075" modified="20210206162245463" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20200513172048075" modified="20210207113311703" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre>hide</pre>
 </div>
-<div created="20210206162239697" modified="20210206162239708" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20210206162239697" modified="20210207113308546" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre>hide</pre>
 </div>
 <div created="20210123162133776" modified="20210123162242165" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/palette" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -363,7 +434,10 @@ Error message and password prompt
 <div created="20210206161602594" modified="20210206161853031" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/close" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>show</pre>
 </div>
-<div created="20210206161559505" modified="20210206162232642" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20210206162853604" modified="20210207113303978" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/delete" type="text/vnd.tiddlywiki" revision="1" bag="default">
+<pre>hide</pre>
+</div>
+<div created="20210206161559505" modified="20210207113303714" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre>hide</pre>
 </div>
 <div created="20210206161600957" modified="20210206162231762" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/more-tiddler-actions" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -10242,7 +10316,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div caption="{{$:/language/SideBar/More/Caption}}" created="20210206162256506" modified="20210206162256516" tags="$:/tags/hide" title="$:/core/ui/SideBar/More" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="{{$:/language/SideBar/More/Caption}}" created="20210206162256506" modified="20210206163049305" tags="$:/tags/hide" title="$:/core/ui/SideBar/More" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;div class=&quot;tc-more-sidebar&quot;&gt;
 &lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[all[shadows+tiddlers]tag[$:/tags/MoreSideBar]!has[draft.of]]&quot; default={{$:/config/DefaultMoreSidebarTab}} state=&quot;$:/state/tab/moresidebar&quot; class=&quot;tc-vertical tc-sidebar-tabs-more&quot; explicitState=&quot;$:/state/tab/moresidebar-1850697562&quot;/&gt;
 &lt;/div&gt;
@@ -10288,7 +10362,7 @@ $button$
 <pre>&lt;$macrocall $name=&quot;timeline&quot; format={{$:/language/RecentChanges/DateFormat}}/&gt;
 </pre>
 </div>
-<div caption="{{$:/language/SideBar/Tools/Caption}}" created="20210206162257457" modified="20210206162257467" tags="$:/tags/hide" title="$:/core/ui/SideBar/Tools" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="{{$:/language/SideBar/Tools/Caption}}" created="20210206162257457" modified="20210206162904226" tags="$:/tags/hide" title="$:/core/ui/SideBar/Tools" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define lingo-base() $:/language/ControlPanel/
 \define config-title()
 $:/config/PageControlButtons/Visibility/$(listItem)$
@@ -10340,10 +10414,10 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div created="20210123163645351" modified="20210130172032948" title="$:/GitHub/Username" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
-<div created="20210206162134102" modified="20210206162134102" status="complete" title="$:/Import" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20210206165315907" modified="20210206165315907" status="complete" title="$:/Import" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>The following tiddlers were imported:
 
-# [[$:/plugins/tg/ro]]</pre>
+# [[$:/user/images/popup-unlink]]</pre>
 </div>
 <div title="$:/isEncrypted" revision="0" bag="default">
 <pre>no</pre>
@@ -11659,13 +11733,13 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 {{$:/plugins/tg/ro/images/publish}}
 &lt;/$button&gt;</pre>
 </div>
-<div created="20170322105910944" list-before="$:/core/ui/TopBar/menu" modified="20210206162159667" tags="$:/tags/TopRightBar" title="$:/plugins/tg/sro/publish-button" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20170322105910944" list-before="$:/core/ui/TopBar/menu" modified="20210206163145880" tags="$:/tags/TopRightBar" title="$:/plugins/tg/sro/publish-button" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$button class=&quot;tc-btn-invisible&quot; tooltip=&quot;Publish simple read-only&quot;&gt;
 &lt;$action-sendmessage $message=&quot;tm-open-window&quot; $param=&quot;$:/plugins/tg/sro/publish&quot; height=&quot;700px&quot; width=&quot;500px&quot;/&gt;
 {{$:/plugins/tg/sro/images/publish}}
 &lt;/$button&gt;</pre>
 </div>
-<div created="20170322105952964" list-after="$:/themes/tiddlywiki/vanilla/base" modified="20210206162159939" tags="-$:/tags/Stylesheet" title="$:/plugins/tg/sro/readonly-styles" type="text/css" revision="0" bag="default">
+<div created="20170322105952964" list-after="$:/themes/tiddlywiki/vanilla/base" modified="20210206163145905" tags="-$:/tags/Stylesheet" title="$:/plugins/tg/sro/readonly-styles" type="text/css" revision="0" bag="default">
 <pre>/* Readonly styles for buttons */
 
 svg.tc-image-new-button,
@@ -11694,7 +11768,7 @@ svg.tgc-publish-sro {
 }
 </pre>
 </div>
-<div created="20181221200154739" modified="20210206162200456" tags="-$:/tags/SideBarSegment" title="$:/plugins/tg/sro/search" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20181221200154739" modified="20210206163145909" tags="-$:/tags/SideBarSegment" title="$:/plugins/tg/sro/search" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;div class=&quot;tc-sidebar-lists_&quot;&gt;
 
 &lt;$set name=&quot;searchTiddler&quot; value=&quot;$:/temp/search&quot;&gt;
@@ -11827,8 +11901,11 @@ svg.tgc-publish-sro {
 <div created="20210123162327791" modified="20210130173438042" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>~/notes</pre>
 </div>
-<div created="20210206162415537" modified="20210206162415537" title="$:/state/tab-1101911311" revision="1" bag="default">
+<div created="20210207113259431" modified="20210207113318746" title="$:/state/tab-1101911311" revision="5" bag="default">
 <pre>$:/plugins/tg/ro/save</pre>
+</div>
+<div created="20210207113306496" modified="20210207113306496" title="$:/state/tabs/controlpanel/toolbars-1912712011" revision="1" bag="default">
+<pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
 </div>
 <div title="$:/status/IsAnonymous" revision="1" bag="default">
 <pre>yes</pre>
@@ -11845,7 +11922,7 @@ svg.tgc-publish-sro {
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre></pre>
 </div>
-<div list="xyz About" title="$:/StoryList" revision="2" bag="default">
+<div list="xyz About" title="$:/StoryList" revision="6" bag="default">
 <pre></pre>
 </div>
 <div created="20210123162142464" modified="20210205092742250" title="$:/theme" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -11969,7 +12046,16 @@ svg.tgc-publish-sro {
 <div created="20210206152506161" modified="20210206152533941" title="$:/themes/tiddlywiki/vanilla/settings/fontfamily" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Roboto, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;</pre>
 </div>
-<div created="20210123162009321" modified="20210206160130013" tags="" title="About" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20200514035239004" modified="20210206164858969" tags="$:/tags/Image" title="$:/user/images/popup-link" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-popup-link-button tc-image-button&quot; viewBox=&quot;0 0 400 400&quot;&gt;&lt;path d=&quot;M297.333 3.001c-16.479 3.33-16.404 3.27-65.879 52.589-49.98 49.821-50.491 50.422-54.893 64.439-2.298 7.317-2.297 23.961.002 31.281 2.392 7.617 7.985 18.023 9.687 18.023 2.092 0 30.417-29.658 30.417-31.849 0-4.403 2.097-6.716 43.765-48.273 45.73-45.607 43.561-43.766 49.466-41.98 4.693 1.419 42.824 40.475 43.256 44.305.646 5.728 1.632 4.593-42.027 48.342-42.956 43.045-43.406 43.455-47.599 43.455-2.424 0-3.235.698-17.867 15.357l-15.328 15.357 1.655 1.263c17.552 13.392 43.933 14.067 63.174 1.617 4.439-2.872 87.17-84.958 91.977-91.26 14.879-19.505 14.791-47.465-.211-67-3.958-5.154-43.913-44.686-47.812-47.305C327.468 3.535 310.998.24 297.333 3.001m-44 115.072c-5.551 2.142-130.874 127.201-134.196 133.913-8.924 18.035 9.248 36.995 28.53 29.764 5.211-1.954 130.679-127.304 133.862-133.736 8.831-17.844-9.393-37.196-28.196-29.941m-126.557 56.674c-8.587 1.428-17.698 5.458-24.776 10.96-5.33 4.142-87.421 86.711-89.941 90.464-13.452 20.035-12.774 46.341 1.68 65.162 3.958 5.154 43.913 44.686 47.811 47.305 19.686 13.227 46.316 12.268 65.117-2.345 5.206-4.046 87.397-86.673 89.817-90.293 12.656-18.933 12.798-43.988.357-62.788-.927-1.4-2.022-2.545-2.435-2.545-2.094 0-32.406 31.672-32.406 33.86 0 4.39-2.112 6.72-43.432 47.919-45.431 45.298-43.952 44.04-49.649 42.223-2.765-.882-40.666-37.748-42.634-41.469-1.222-2.312-1.22-6.76.003-9.066.525-.991 19.65-20.453 42.5-43.25 43.277-43.178 44.199-43.996 47.974-42.551.553.212 7.258-6.019 17.238-16.017l16.333-16.363-1.654-1.263c-10.995-8.39-27.578-12.324-41.903-9.943&quot; fill-rule=&quot;evenodd&quot;/&gt;&lt;/svg&gt;</pre>
+</div>
+<div created="20200514035734957" modified="20210206165315922" tags="$:/tags/Image" title="$:/user/images/popup-unlink" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;svg width=&quot;22pt&quot; height=&quot;22pt&quot; class=&quot;tc-popup-unlink-button tc-image-button&quot; viewBox=&quot;0 0 400 400&quot;&gt;&lt;path d=&quot;M303.667 2.432c-9.406.907-18.161 4.022-26 9.25-8.808 5.875-91.074 88.756-95.244 95.955-10.514 18.155-10.126 40.617.995 57.596l2.773 4.232 15.238-15.227c14.539-14.529 15.238-15.344 15.238-17.766 0-1.396.43-3.348.957-4.338 1.156-2.177 82.763-83.685 84.832-84.731 2.048-1.036 7.271-.916 9.41.216 4.222 2.232 41.346 40.589 41.826 43.214 1.137 6.227 3.042 3.995-41.574 48.714-45.404 45.51-43.426 43.688-48.017 44.232-3.242.384-3.451.56-18.19 15.328L231 214.048l1.667 1.299c17.193 13.404 45.438 13.268 64.274-.309 8.333-6.007 89.863-88.736 93.302-94.675 11.08-19.131 10.108-42.411-2.502-59.923-4.259-5.914-45.195-46.399-49.99-49.438-9.704-6.151-23.417-9.599-34.084-8.57m-181 173.614c-6.28 1.639-13.682 5.125-18.941 8.918-5.087 3.67-88.76 87.544-91.699 91.92-12.605 18.769-12.237 44.433.899 62.676 4.16 5.777 45.191 46.396 49.846 49.346a55.42 55.42 0 0062.169-1.868c8.333-6.007 89.863-88.736 93.302-94.675 10.599-18.3 10.09-40.912-1.308-58.083l-2.475-3.73-16.237 16.225c-9.916 9.909-16.101 16.577-15.89 17.13 1.445 3.775.628 4.697-42.55 47.973-22.797 22.85-42.26 41.975-43.25 42.5-2.311 1.226-7.417 1.228-9.733.004-4.121-2.179-40.639-39.901-41.513-42.882-1.803-6.145-3.328-4.338 42.267-50.068C128.771 220.094 131.081 218 135.484 218c1.975 0 3.782-1.591 18.188-16.024l15.995-16.023L168 184.63c-10.588-8.403-31.13-12.293-45.333-8.584&quot; fill-rule=&quot;evenodd&quot;/&gt;&lt;/svg&gt;</pre>
+</div>
+<div created="20210206164013632" modified="20210206164316244" title="$:/view" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>horizontal</pre>
+</div>
+<div created="20210123162009321" modified="20210207113244786" tags="" title="About" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre>Hey, I'm Marco 👋
 
 You found my digital garden, feel free to have a look around and explore. The main purpose of this place is to create the right conditions for ideas to develop, grow, and form connections across disciplines.
@@ -11978,8 +12064,21 @@ At the end of each note, you'll find a series of backlinks, pointing to all the 
 
 Ultimately, the end goal of creative research is to be able to connect the dots and get a sense of the bigger picture. This is my attempt at doing it.
 
-The format of these notes is heavily inspired by [[Andy Matuschak|https://notes.andymatuschak.org/About_these_notes]] and made possible by the [[TW Kristal plugin|https://github.com/crazko/krystall]].
+&lt;div class=&quot;tooltip&quot;&gt;[[Something]]&lt;div class=&quot;tooltiptext&quot;&gt;&lt;$transclude tiddler=&quot;Something&quot; mode=&quot;block&quot;/&gt;&lt;/div&gt;&lt;/div&gt;
 
+The format of these notes is heavily inspired by [[Andy Matuschak|https://notes.andymatuschak.org/About_these_notes]] and made possible by the [[TW Kristal plugin|https://github.com/crazko/krystal]].
+
+</pre>
+</div>
+<div created="20210206164046456" modified="20210206164122588" tags="" title="Foobar" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>hghahah</pre>
+</div>
+<div created="20210206164020164" modified="20210206165152724" tags="" title="Something" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>abc
+
+def
+
+&lt;div class=&quot;tooltip&quot;&gt;[[This is a link with a preview|Foobar]]&lt;div class=&quot;tooltiptext&quot;&gt;&lt;$transclude tiddler=&quot;Foobar&quot; mode=&quot;block&quot;/&gt;&lt;/div&gt;&lt;/div&gt;.
 </pre>
 </div>
 <div created="20210205092829736" modified="20210206153244306" tags="$:/tags/Stylesheet" title="Style" type="text/vnd.tiddlywiki" revision="0" bag="default">
